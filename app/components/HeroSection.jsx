@@ -11,7 +11,7 @@ import Stats from "./Stats";
 export default function HeroSection() {
   const [text, setText] = useState("");
   const [isTyping, setIsTyping] = useState(true);
-  const fullText = "Full Stack Developer & AI Enthusiast";
+  const fullText = "Software Engineer & AI Enthusiast";
   
   // Typewriter effect
   useEffect(() => {
@@ -43,7 +43,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-secondary opacity-20 blur-2xl animate-pulse"></div>
+          <div className="absolute inset-0 rounded-full bg-gradient-to-tl from-primary to-secondary opacity-20 blur-2xl animate-pulse"></div>
           <div className="relative w-full h-full overflow-hidden rounded-full border-4 border-border">
             <Image 
               src="/images/alif.png" 

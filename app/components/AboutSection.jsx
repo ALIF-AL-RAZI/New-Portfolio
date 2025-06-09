@@ -29,19 +29,21 @@ export default function AboutSection() {
           >
             <h3 className="text-2xl font-semibold">Personal Summary</h3>
             <p className="text-muted-foreground leading-relaxed">
-              I'm a passionate Full Stack Developer with expertise in modern web technologies. 
-              With a strong foundation in both frontend and backend development, I create 
-              responsive, user-friendly applications that solve real-world problems.
+            Enthusiastic React Full Stack Developer with hands-on experience in developing web
+applications using React.js, Node.js, and MongoDB. Focused on modern web technologies,
+UI/UX design principles, and applications in AI and machine learning. 
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              My journey in software development began 5 years ago, and since then, I've worked 
-              on various projects ranging from e-commerce platforms to data visualization tools. 
-              I'm constantly learning and adapting to new technologies to stay at the forefront 
-              of web development.
+            Proficient in
+building intelligent solutions using OpenAI APIs, LangChain, RAG pipelines, and
+popular ML frameworks like TensorFlow, PyTorch, and scikit-learn. Experienced in
+developing end-to-end AI applications, including large language models (LLMs) and
+vector databases.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              When I'm not coding, you can find me exploring new hiking trails, reading about 
-              emerging tech trends, or experimenting with new recipes in the kitchen.
+            Eager to contribute to innovative projects, leveraging both full-stack
+development and machine learning expertise to create impactful solutions in a dynamic team
+environment.
             </p>
             <Link href="/about">
               <Button>
@@ -66,7 +68,7 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-medium">New York, NY</p>
+                  <p className="font-medium">Dhaka, Bangladesh</p>
                 </div>
               </div>
               
@@ -76,8 +78,8 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <a href="mailto:alif@example.com" className="font-medium hover:text-primary transition-colors">
-                    alif@example.com
+                  <a href="mailto:alifalrazi1@gmail.com" className="font-medium hover:text-primary transition-colors">
+                  alifalrazi1@gmail.com
                   </a>
                 </div>
               </div>
@@ -88,8 +90,8 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
-                  <a href="tel:+1234567890" className="font-medium hover:text-primary transition-colors">
-                    +1 (234) 567-890
+                  <a href="tel:+8801872792494" className="font-medium hover:text-primary transition-colors">
+                  +8801872792494
                   </a>
                 </div>
               </div>
