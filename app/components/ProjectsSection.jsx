@@ -4,8 +4,9 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { Github, ExternalLink, X } from "lucide-react";
+import { Github, ExternalLink, X, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 // Project Card Component
 function ProjectCard({ project, onClick, index }) {
@@ -47,6 +48,7 @@ function ProjectCard({ project, onClick, index }) {
           ))}
         </div>
       </div>
+      
     </motion.div>
   );
 }
@@ -268,7 +270,7 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-20 px-4 flex flex-col items-center gap-10">
       <div className="container mx-auto">
         <motion.h2 
           className="text-3xl font-bold mb-12 text-center"
@@ -294,7 +296,13 @@ export default function ProjectsSection() {
         {selectedProject && (
           <ProjectModal project={selectedProject} onClose={handleCloseProject} />
         )}
+        
       </div>
+      <Link href="/projects" >
+              <Button>
+                See More <ArrowRight size={16} className="ml-1" />
+              </Button>
+            </Link>
     </section>
   );
 }

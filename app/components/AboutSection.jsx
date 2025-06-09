@@ -43,7 +43,11 @@ export default function AboutSection() {
               When I'm not coding, you can find me exploring new hiking trails, reading about 
               emerging tech trends, or experimenting with new recipes in the kitchen.
             </p>
-            <Button>Know More <ArrowRight size={16} className="ml-1" /></Button>
+            <Link href="/about">
+              <Button>
+                Know More <ArrowRight size={16} className="ml-1" />
+              </Button>
+            </Link>
           </motion.div>
           
           <motion.div 
