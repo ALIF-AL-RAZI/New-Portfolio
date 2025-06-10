@@ -16,13 +16,16 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Alif Al Razi – Portfolio",
+  icons: {
+    icon: "/images/letter-a.png",
+  },
   description: "Software Engineer | React Full Stack Developer | AI Enthusiast",
   keywords: ["software engineer", "full stack developer", "react developer", "AI enthusiast", "web development", "portfolio"],
   authors: [{ name: "Alif Al Razi" }],
   openGraph: {
     title: "Alif Al Razi – Portfolio",
     description: "Software Engineer | React Full Stack Developer | AI Enthusiast",
-    url: "https://your-portfolio-url.com",
+    url: "https://alifalrazi.com",
     siteName: "Alif Al Razi Portfolio",
     images: [
       {
