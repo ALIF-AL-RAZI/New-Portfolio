@@ -8,13 +8,13 @@ export default function ExperienceSection() {
     {
       title: "Software Engineer",
       company: "Tweetsy Inc.",
-      period: "October 2024 - Present",
+      period: "May 2024 - Present",
       description: "As a Software Engineer at Tweetsy Inc., I develop full-stack SaaS products with responsive user interfaces and scalable backend services. I collaborate with teams to enhance user experiences, build AI-driven tools for business optimization, and integrate APIs to expand functionality and streamline workflows."
     },
     {
       title: "Moderator",
       company: "Virtual Sherpa",
-      period: "February 2024 – June 2024",
+      period: "February 2024 – March 2024",
       description: "Promoting constructive engagement, upholding standards, aiding users, strategizing for growth, and safeguarding the community by monitoring and managing unsuitable content."
     },
     {
