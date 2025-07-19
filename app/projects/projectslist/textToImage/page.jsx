@@ -247,7 +247,7 @@ const TextToImageGenerator = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="aspect-square bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center">
+              <Card className="aspect-square rounded-lg overflow-hidden flex items-center justify-center">
                 {isLoading ? (
                   <div className="text-center">
                     <Loader2 className="w-8 h-8 animate-spin mx-auto mb-2 text-purple-600" />
@@ -266,7 +266,7 @@ const TextToImageGenerator = () => {
                     <p>Your generated image will appear here</p>
                   </div>
                 )}
-              </div>
+              </Card>
             </CardContent>
           </Card>
           
