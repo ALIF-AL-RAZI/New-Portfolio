@@ -35,7 +35,7 @@ const TextToImageGenerator = () => {
     setGeneratedImage(null);
 
     try {
-      const response = await fetch('http://localhost:8000/generate', {
+      const response = await fetch('https://texttoimage-backend-wi69.onrender.com/generate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -82,10 +82,10 @@ const TextToImageGenerator = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-6">
+    <div className="min-h-screen  p-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-2">
+          <h1 className="text-4xl font-bold rent mb-2">
             AI Text-to-Image Generator
           </h1>
           
@@ -123,7 +123,7 @@ const TextToImageGenerator = () => {
                 </Button>
 
                 {showAdvanced && (
-                  <div className="space-y-4 p-4 border rounded-lg bg-gray-50">
+                  <div className="space-y-4 p-4 border rounded-lg">
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <Label htmlFor="width">Width</Label>
@@ -197,7 +197,7 @@ const TextToImageGenerator = () => {
               <Button
                 onClick={generateImage}
                 disabled={isLoading || !prompt.trim()}
-                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700"
+                className="w-full "
                 size="lg"
               >
                 {isLoading ? (
@@ -247,7 +247,7 @@ const TextToImageGenerator = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden flex items-center justify-center">
+              <div className="aspect-square bg-gray-900 rounded-lg overflow-hidden flex items-center justify-center">
                 {isLoading ? (
                   <div className="text-center">
                     <Loader2 className="w-8 h-8 animate-spin mx-auto mb-2 text-purple-600" />
