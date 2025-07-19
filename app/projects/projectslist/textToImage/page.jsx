@@ -20,7 +20,7 @@ const TextToImageGenerator = () => {
   const [height, setHeight] = useState(1024);
   const [width, setWidth] = useState(1024);
   const [guidanceScale, setGuidanceScale] = useState(3.5);
-  const [numSteps, setNumSteps] = useState(50);
+  const [numSteps, setNumSteps] = useState(7);
   const [seed, setSeed] = useState(0);
   const [showAdvanced, setShowAdvanced] = useState(false);
 
@@ -78,7 +78,7 @@ const TextToImageGenerator = () => {
   };
 
   const randomizeSeed = () => {
-    setSeed(Math.floor(Math.random() * 1000000));
+    setSeed(Math.floor(Math.random() * 10000));
   };
 
   return (
@@ -156,7 +156,7 @@ const TextToImageGenerator = () => {
                       <Slider
                         value={[guidanceScale]}
                         onValueChange={(value) => setGuidanceScale(value[0])}
-                        max={20}
+                        max={10}
                         min={1}
                         step={0.1}
                         className="w-full"
@@ -168,8 +168,8 @@ const TextToImageGenerator = () => {
                       <Slider
                         value={[numSteps]}
                         onValueChange={(value) => setNumSteps(value[0])}
-                        max={100}
-                        min={10}
+                        max={20}
+                        min={5}
                         step={1}
                         className="w-full"
                       />
