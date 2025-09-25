@@ -68,7 +68,7 @@ environment.
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-medium">Dhaka, Bangladesh</p>
+                  <p className="font-medium">Dublin, Ireland</p>
                 </div>
               </div>
               
@@ -90,8 +90,8 @@ environment.
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
-                  <a href="tel:+8801872792494" className="font-medium hover:text-primary transition-colors">
-                  +8801872792494
+                  <a href="tel:+353894620802" className="font-medium hover:text-primary transition-colors">
+                  +353894620802
                   </a>
                 </div>
               </div>
